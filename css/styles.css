@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+
+:root {
+    --overpassFont: 'Overpass', sans-serif;
+    --ubuntuFont: 'Ubuntu', sans-serif;
+
+    /* Colors */
+    /* Primary */
+    --lightRed: hsl(356, 100%, 66%);
+    -veryLightRed: hsl(355, 100%, 74%);
+    --veryDarkBlue: hsl(208, 49%, 24%);
+
+    /* Neutral */
+    --white: hsl(0, 0%, 100%);
+    --grayishBlue: hsl(240, 2%, 79%);
+    --veryDarkGrayishBlue: hsl(207, 13%, 34%);
+    --veryDarkBlackBlue: hsl(240, 10%, 16%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fafafa;
+    font-family: var(--overpassFont);
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container {
+    width: calc(100% - 3rem);
+    margin: 0 auto;
+}
+
+.header {
+    background-image: url(../img/bg-pattern-intro-mobile.svg), linear-gradient(135deg, hsla(12, 100%, 72%, 1) 0%, hsla(353, 100%, 62%, 1) 100%);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top -243px left -335px, center center;
+    background-size: auto, cover;
+    border-radius: 0 0 0 100px;
+}
+
+.navbar {
+    padding-top: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar__logo {
+    display: inline-block;
+    width: 82px;
+}
+
+.navbar__toggler {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.nav__container {
+    display: none;
+}
+
+.hero {
+    padding: 6.75rem 0 9.75rem;
+    text-align: center;
+    color: #ffffff;
+}
+
+.hero__title {
+    font-size: 2.25rem;
+    line-height: 46px;
+    letter-spacing: -1.08px;
+    font-weight: 400;
+}
+
+.hero__subtitle {
+    margin-top: 0.875rem;
+    font-size: 1.125rem;
+    line-height: 23px;
+}
+
+.hero__cta {
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.hero__cta-btn {
+    border: 1px solid transparent;
+    border-radius: 28px;
+    background-color: transparent;
+    font-family: var(--ubuntuFont);
+    font-weight: 700;
+    padding: 0.875rem 0.938rem 0.875rem 1rem;
+    font-size: 1rem;
+    line-height: 18px;
+    background-color: #ffffff;
+    color: var(--lightRed);
+    cursor: pointer;
+}
+
+.hero__cta-btn--alt {
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+    padding: 0.875rem 1.438rem 0.875rem 1.5rem;
+}
