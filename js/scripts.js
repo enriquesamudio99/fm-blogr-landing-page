@@ -1,8 +1,12 @@
 const navLinks = document.querySelectorAll('.nav__link');
+const togglerBtn = document.querySelector('#togglerBtn');
+const navContainer = document.querySelector('#navContainer');
 
 document.addEventListener("DOMContentLoaded", () => {
 
     initApp();
+
+    togglerBtn.addEventListener("click", showCloseNav);
 
 });
 
@@ -34,5 +38,17 @@ function activeNavLink(e) {
         }
     });
     
+
+}
+
+function showCloseNav() {
+
+    navLinks.forEach(navLink => {
+        navLink.classList.remove("nav__link--active");
+        navLink.nextElementSibling.style.maxHeight = null;
+    });
+
+    togglerBtn.classList.toggle("navbar__toggler--active");
+    navContainer.classList.toggle("nav__container--active");
 
 }
