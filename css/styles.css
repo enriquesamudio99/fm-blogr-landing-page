@@ -64,6 +64,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
 
 .navbar__logo {
@@ -78,7 +79,119 @@ img {
 }
 
 .nav__container {
-    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin-top: 2.313rem;
+    background-color: #ffffff;
+    padding: 1.5rem 1.5rem 2rem;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.243444);
+    border-radius: 5px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.nav__item {
+    width: 100%;
+    text-align: center;
+}
+
+.nav__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.563rem;
+    font-weight: 400;
+    color: #1F3E5A;
+    font-size: 1.125rem;
+    line-height: 28px;
+}
+
+.nav__link-arrow {
+    width: 8px;
+    height: 5px;
+    background-image: url(../img/icon-arrow-dark.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    transition: transform .3s ease-in-out;
+}
+
+.nav__link--active {
+    color: rgba(31, 62, 90, .75);
+}
+
+.nav__link--active .nav__link-arrow {
+    transform: rotate(180deg);
+}
+
+.dropdown-menu {
+    width: 100%;
+    background-color: #EFEFF0;
+    max-height: 0;
+    margin-top: 0;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+    overflow: hidden;
+}
+
+.nav__link--active + .dropdown-menu {
+    margin-top: 1.5rem;    
+    opacity: 1;
+}
+
+.dropdown-menu__item {
+    margin-top: 0.75rem;
+}
+
+.dropdown-menu__item:first-of-type {
+    margin-top: 0;
+    padding-top: 1.063rem;
+}
+
+.dropdown-menu__item:last-of-type {
+    padding-bottom: 1.563rem;
+}
+
+.dropdown-menu__link {
+    color: #1F3E5A;
+    font-size: 1rem;
+    line-height: 28px;
+}
+
+.nav__auth {
+    margin-top: 1.5rem;
+    padding-top: 1.188rem;
+    border-top: 1px solid #E8E4E4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.75rem;
+}
+
+.nav__auth-link {
+    display: inline-block;
+    color: #1F3E5A;
+    font-size: 1.125rem;
+    line-height: 28px;
+}
+
+.nav__auth-link--alt {
+    font-family: var(--ubuntuFont);
+    font-weight: 700;
+    padding: 0.938rem 2.438rem 0.938rem 2.5rem;
+    font-size: 1rem;
+    line-height: 18px;
+    background: linear-gradient(135deg, #FF8F71 0%, #FF3E55 100%);
+    border-radius: 28px;
+    color: #ffffff;
 }
 
 .hero {
@@ -111,7 +224,6 @@ img {
 .hero__cta-btn {
     border: 1px solid transparent;
     border-radius: 28px;
-    background-color: transparent;
     font-family: var(--ubuntuFont);
     font-weight: 700;
     padding: 0.875rem 0.938rem 0.875rem 1rem;

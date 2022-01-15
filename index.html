@@ -6,7 +6,7 @@
 
     <meta name="description" content="Blogr Landing Page">
 
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     
     <title>Frontend Mentor | [Blogr]</title>
 
@@ -29,43 +29,67 @@
                 <div class="nav__container">
                     <ul class="nav" id="nav">
                         <li class="nav__item">
-                            <a class="nav__link nav__link--active" href="#">Product</a>
+                            <a class="nav__link" href="#">Product <span class="nav__link-arrow"></span></a>
 
-                            <!-- <ul class="dropdown-menu">
-                                <li><a class="dropdown-menu__item" href="#">Overview</a></li>
-                                <li><a class="dropdown-menu__item" href="#">Pricing</a></li>
-                                <li><a class="dropdown-menu__item" href="#">Marketplace</a></li>
-                                <li><a class="dropdown-menu__item" href="#">Features</a></li>
-                                <li><a class="dropdown-menu__item" href="#">Integrations</a></li>
-                            </ul> -->
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-menu__item">
+                                    <a class="dropdown-menu__link" href="#">Overview</a>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <a class="dropdown-menu__link" href="#">Pricing</a>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <a class="dropdown-menu__link" href="#">Marketplace</a>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <a class="dropdown-menu__link" href="#">Features</a>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <a class="dropdown-menu__link" href="#">Integrations</a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="nav__item">
-                            <a class="nav__link" href="#">Company</a>
+                            <a class="nav__link" href="#">Company <span class="nav__link-arrow"></span></a>
 
-                            <!-- <ul class="dropdown-menu">
-                                <li><a class="dropdown-menu__item" href="#">About</a></li>
-                                <li><a class="dropdown-menu__item" href="#">Team</a></li>
-                                <li><a class="dropdown-menu__item" href="#">Blog</a></li>
-                                <li><a class="dropdown-menu__item" href="#">Careers</a></li>
-                            </ul> -->
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-menu__item">
+                                    <a class="dropdown-menu__link" href="#">About</a>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <a class="dropdown-menu__link" href="#">Team</a>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <a class="dropdown-menu__link" href="#">Blog</a>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <a class="dropdown-menu__link" href="#">Careers</a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="nav__item">
-                            <a class="nav__link" href="#">Connect</a>
+                            <a class="nav__link" href="#">Connect <span class="nav__link-arrow"></span></a>
 
-                            <!-- <ul class="dropdown-menu">
-                                <li><a class="dropdown-menu__item" href="#">Contact</a></li>
-                                <li><a class="dropdown-menu__item" href="#">Newsletter</a></li>
-                                <li><a class="dropdown-menu__item" href="#">LinkedIn</a></li>
-                            </ul> -->
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-menu__item">
+                                    <a class="dropdown-menu__link" href="#">Contact</a>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <a class="dropdown-menu__link" href="#">Newsletter</a>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <a class="dropdown-menu__link" href="#">LinkedIn</a>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
 
                     <ul class="nav__auth">
-                        <li class="nav__item">
-                            <a class="nav__link" href="#">Login</a>
+                        <li class="nav__auth-item">
+                            <a class="nav__auth-link" href="#">Login</a>
                         </li>
-                        <li class="nav__item">
-                            <a class="nav__link" href="#">Sign Up</a>
+                        <li class="nav__auth-item">
+                            <a class="nav__auth-link nav__auth-link--alt" href="#">Sign Up</a>
                         </li>
                     </ul>
 
@@ -161,6 +185,8 @@
     Contact
     Newsletter
     LinkedIn -->
+
+    <script src="js/scripts.js"></script>
 
 </body>
 </html>
