@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;600&family=Ubuntu:wght@400;500;700&display=swap');
 
 :root {
     --overpassFont: 'Overpass', sans-serif;
@@ -8,12 +8,12 @@
     /* Primary */
     --lightRed: hsl(356, 100%, 66%);
     -veryLightRed: hsl(355, 100%, 74%);
-    --veryDarkBlue: hsl(208, 49%, 24%);
+    --veryDarkBlue: hsl(208, 48%, 24%);
 
     /* Neutral */
     --white: hsl(0, 0%, 100%);
     --grayishBlue: hsl(240, 2%, 79%);
-    --veryDarkGrayishBlue: hsl(207, 13%, 34%);
+    --veryDarkGrayishBlue: hsl(207, 12%, 34%);
     --veryDarkBlackBlue: hsl(240, 10%, 16%);
 }
 
@@ -150,7 +150,7 @@ img {
 }
 
 .nav__link--active .nav__link-arrow {
-    transform: rotate(180deg);
+    transform: rotate(-180deg);
 }
 
 .dropdown-menu {
@@ -261,4 +261,47 @@ img {
     background-color: transparent;
     color: #ffffff;
     padding: 0.875rem 1.438rem 0.875rem 1.5rem;
+}
+
+.section {
+    padding: 6.25rem 0;
+    text-align: center;
+}
+
+.section__title {
+    font-size: 1.75rem;
+    line-height: 35px;
+    letter-spacing: -0.84px;
+    font-weight: 400;
+    color: var(--veryDarkBlue);
+}
+
+.section__mobile-bg {
+    margin: 2.875rem auto;
+    width: 326px;
+    height: 326px;
+    background-image: url(../img/illustration-editor-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.section__info-container {
+    display: grid;
+    gap: 2.5rem;
+}
+
+.section__info-title {
+    font-size: 1.75rem;
+    line-height: 32px;
+    font-weight: 400;
+    color: var(--veryDarkBlue);
+}
+
+.section__info-text {
+    margin-top: 1rem;
+    font-size: 1rem;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+    color: var(--veryDarkGrayishBlue);
 }
