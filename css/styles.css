@@ -268,6 +268,10 @@ img {
     text-align: center;
 }
 
+.section--two {
+    padding: 4.938rem 0 6.25rem;
+}
+
 .section__title {
     font-size: 1.75rem;
     line-height: 35px;
@@ -276,7 +280,7 @@ img {
     color: var(--veryDarkBlue);
 }
 
-.section__mobile-bg {
+.section__mobile-bg-editor {
     margin: 2.875rem auto;
     width: 326px;
     height: 326px;
@@ -284,6 +288,16 @@ img {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+}
+
+.section__mobile-bg-laptop {
+    margin: 0 auto 2.875rem;
+    width: 328px;
+    height: 326.5px;
+    background-image: url(../img/illustration-laptop-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto;
 }
 
 .section__info-container {
@@ -296,6 +310,22 @@ img {
     line-height: 32px;
     font-weight: 400;
     color: var(--veryDarkBlue);
+}
+
+.section__info-title--introducing {
+    height: 66px;
+}
+
+.section__info-title--robust {
+    height: 75px;
+}
+
+.section__info-title--free {
+    height: 45px;
+}
+
+.section__info-title--powerful {
+    height: 45px;
 }
 
 .section__info-text {
