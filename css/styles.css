@@ -488,7 +488,8 @@ img {
     .section--one {
         background-image: url(../img/illustration-editor-desktop.svg);
         background-repeat: no-repeat;
-        background-position: right -275px top 71px;
+        /* background-position: right -275px top 71px; */
+        background-position: left calc(50vw + 70px) top 71px;
         background-size: auto;
     }
 }
@@ -502,7 +503,8 @@ img {
         padding: 12.375rem 0 19.25rem;
         background-image: url(../img/illustration-laptop-desktop.svg);
         background-repeat: no-repeat;
-        background-position: left -279px top 116px;
+        /* background-position: left -279px top 116px; */
+        background-position: right calc(50vw + 15px) top 116px;
         background-size: auto;
     }
 }
