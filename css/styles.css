@@ -504,7 +504,7 @@ img {
         background-image: url(../img/illustration-laptop-desktop.svg);
         background-repeat: no-repeat;
         /* background-position: left -279px top 116px; */
-        background-position: right calc(50vw + 15px) top 116px;
+        background-position: right calc(50vw + 25px) top 116px;
         background-size: auto;
     }
 }
@@ -795,7 +795,7 @@ img {
 .footer__title {
     font-size: 1.125rem;
     line-height: 33px;
-    font-weight: 500;
+    font-weight: 600;
     color: #ffffff;
 }
 
